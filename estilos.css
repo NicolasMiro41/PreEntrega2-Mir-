@@ -172,6 +172,66 @@ section{
 
 }
 
+/* NOSOTROS */
+.container-nosotros{
+    margin: auto;
+    border-radius: 25px;
+    border-color: black;
+}
+
+.section_2{
+    width: 75%;
+    margin: auto;
+    padding: 100px 0;
+}
+
+.section_2-title{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: orangered;
+}
+
+.us{
+    display: flex;
+}
+
+.us-text{
+    width: 80%;
+    padding: 0 100px 0 0;
+}
+
+.us-parrafo{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 25px;
+    text-align: justify;
+}
+
+.parrafo-text{
+    margin: 25px 0;
+}
+
+.us-redes{
+    margin: 20px 0;
+}
+
+.us-redes-title{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.us-img{
+    width: 60%;
+}
+
+.img-nosotros{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 5%;
+}
+/* NOSOTROS */
+
 .redes{
     color: orangered;
     font-size: 50px;
