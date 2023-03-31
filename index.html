@@ -18,6 +18,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Mi CSS -->
     <link rel="stylesheet" href="estilos.css">
     <title>ParKav Studio</title>
@@ -26,59 +31,254 @@
 
 
 <body>
-    <header>
-        <h1 id="inicio">ParKav Studio</h1>
+    <div class="banner">
+        <h1></h1>
+    </div>
+    <!-- navbar empieza -->
+    <header class="conatiner-stiki">
+        <nav class="navbar navbar-expand-md barra navbar-dark">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">
+                <img src="Assets/Imagenes/Logo/Logo.png" alt="Logo" style="width: 70px;
+                ">
+            </a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="conocenos.html">Conocenos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ayuda</a>
+                    </li>
+                </ul>
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Anime
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Figuras</a>
+                        <a class="dropdown-item" href="#">Archvos STL</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Comic
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Figuras</a>
+                        <a class="dropdown-item" href="#">Archivos STL</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Merchandising
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Llaveros</a>
+                        <a class="dropdown-item" href="#">Pines</a>
+                        <a class="dropdown-item" href="#">Tazas</a>
+                    </div>
+                </li>
+            </div>
+
+            <form class="form-inline" action="/action_page.php">
+                <input class="form-control mr-sm-2" type="text" placeholder="Buscar">
+                <button class="btn btnColor" type="submit">Buscar</button>
+            </form>
+
+        </nav>
+
     </header>
-    <!-- navbar inicia -->
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <!-- Brand -->
-        <a class="navbar-brand" href="index.html">
-            <img src="./Assets/Imagenes/Logo/Logo.png" alt="Logo" style="width:70px;">
+    <!-- navbar finaliza -->
+
+    <!-- carousel inicia -->
+    <div class="slider">
+        <ul>
+            <li><img src="Assets/Imagenes/Carousel/Logo horizontal1.png" alt=""></li>
+            <li><img src="Assets/Imagenes/Carousel/Ed.png" alt=""></li>
+            <li><img src="Assets/Imagenes/Carousel/Power.png" alt=""></li>
+            <li><img src="Assets/Imagenes/Carousel/Eva01.png" alt=""></li>
+        </ul>
+    </div>
+    <!-- carousel fin -->
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Assets/Imagenes/Carousel/Logo horizontal1.jpg" alt="ParKav Studio">
+            </div>
+            <div class="carousel-item">
+                <img src="Assets/Imagenes/Carousel/Eva01.jpg" alt="Neo Genesis Evangelion-Eva01">
+            </div>
+            <div class="carousel-item">
+                <img src="Assets/Imagenes/Carousel/Ed.jpg" alt="Full Metal Alchemist-Edward Elrik">
+            </div>
+            <div class="carousel-item">
+                <img src="Assets/Imagenes/Carousel/Power.jpg" alt="Chainsaw Man- Power">
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
         </a>
 
-        <form class="form-inline" action="/action_page.php">
-            <input class="form-control mr-sm-2" type="text" placeholder="Buscar">
-            <button class="btn btn-success" type="submit">Buscar</button>
-        </form>
-
-        <!-- Links -->
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Inicio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="conocenos.html">Acerca de nosotros</a>
-            </li>
-
-            <!-- Dropdown -->
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                    Figuras
-                </a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Figuras Anime</a>
-                    <a class="dropdown-item" href="#">Figuras Comics</a>
-                    <a class="dropdown-item" href="#">Pop and Geek</a>
-                </div>
-            </li>
-        </ul>
-    </nav>
-
-
-
-
-    <!-- navbar finaliza -->
+    </div>
+    <hr>
     <section>
-        <article>
+        <!-- Tarjetas -->
+        </div>
+        <div class="tarjeta-container">
+            <div class="tarjeta">
+                <div class="tarjeta-img">
+                    <img src="./Assets/Imagenes/CardsFiguras/EVA01_Beautyshot.jpg" alt="Neo Genesis Evangelion-Eva01">
+                </div>
+                <div class="tarjeta-body">
+                    <h2>Neo Genesis Evangelion-Eva01</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam assumenda harum enim dolor error
+                        ad exercitationem voluptas odit, aspernatur eius.</p>
+                </div>
+                <div class="tarjeta-footer">
+                    <button>Comprar</button>
+                </div>
+            </div>
 
-        </article>
+            <div class="tarjeta-container">
+                <div class="tarjeta">
+                    <div class="tarjeta-img">
+                        <img src="./Assets/Imagenes/CardsFiguras/Denji.jpg" alt="Chainsaw Man-Denji">
+                    </div>
+                    <div class="tarjeta-body">
+                        <h2>Chainsaw Man-Denji</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam assumenda harum enim dolor
+                            error ad exercitationem voluptas odit, aspernatur eius.</p>
+                    </div>
+                    <div class="tarjeta-footer">
+                        <button>Comprar</button>
+                    </div>
+                </div>
+
+                <div class="tarjeta-container">
+                    <div class="tarjeta">
+                        <div class="tarjeta-img">
+                            <img src="./Assets/Imagenes/CardsFiguras/Guts.jpg" alt="Berserk-Guts">
+                        </div>
+                        <div class="tarjeta-body">
+                            <h2>Berserk-Guts</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam assumenda harum enim dolor
+                                error ad exercitationem voluptas odit, aspernatur eius.</p>
+                        </div>
+                        <div class="tarjeta-footer">
+                            <button>Comprar</button>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-container">
+                        <div class="tarjeta">
+                            <div class="tarjeta-img">
+                                <img src="./Assets/Imagenes/CardsFiguras/Power_BeautyShot.jpg" alt="Chainsaw Man-Power">
+                            </div>
+                            <div class="tarjeta-body">
+                                <h2>Chainsaw Man-Power</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam assumenda harum enim
+                                    dolor error ad exercitationem voluptas odit, aspernatur eius.</p>
+                            </div>
+                            <div class="tarjeta-footer">
+                                <button>Comprar</button>
+                            </div>
+                        </div>
+
+                        <div class="tarjeta-container">
+                            <div class="tarjeta">
+                                <div class="tarjeta-img">
+                                    <img src="./Assets/Imagenes/CardsFiguras/Sem título1.jpg"
+                                        alt="Fullmetal Alchemist-Edward Elrik">
+                                </div>
+                                <div class="tarjeta-body">
+                                    <h2>Fullmetal Alchemist-Edward Elrik</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam assumenda harum
+                                        enim dolor error ad exercitationem voluptas odit, aspernatur eius.</p>
+                                </div>
+                                <div class="tarjeta-footer">
+                                    <button>Comprar</button>
+                                </div>
+                            </div>
+
+                            <div class="tarjeta-container">
+                                <div class="tarjeta">
+                                    <div class="tarjeta-img">
+                                        <img src="./Assets/Imagenes/CardsFiguras/Shigaraki.jpg"
+                                            alt="Boku no Hiro Academia-Shigaraki">
+                                    </div>
+                                    <div class="tarjeta-body">
+                                        <h2>Boku no Hiro Academia-Shigaraki</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam assumenda
+                                            harum enim dolor error ad exercitationem voluptas odit, aspernatur eius.</p>
+                                    </div>
+                                    <div class="tarjeta-footer">
+                                        <button>Comprar</button>
+                                    </div>
+                                </div>
+
+                                <div class="tarjeta-container">
+                                    <div class="tarjeta">
+                                        <div class="tarjeta-img">
+                                            <img src="./Assets/Imagenes/CardsFiguras/Minato.jpg" alt="Naruto-Minato">
+                                        </div>
+                                        <div class="tarjeta-body">
+                                            <h2>Naruto-Minato</h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam assumenda
+                                                harum enim dolor error ad exercitationem voluptas odit, aspernatur eius.
+                                            </p>
+                                        </div>
+                                        <div class="tarjeta-footer">
+                                            <button>Comprar</button>
+                                        </div>
+                                    </div>
+
+
+                                </div>
     </section>
 
+
+    <hr>
+
     <footer>
-        <section>
+        <div>
             <a href="conocenos.html">Conoce acerca de nosotros!</a>
-            <a href="#titulo">Ir arriba</a>
-        </section>
+            <a href="#" class="subir">
+                <i class="fa-sharp fa-solid fa-angle-up"></i>
+            </a>
+            <div class="redes">
+                <i class="fa-brands fa-square-whatsapp"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-tiktok"></i>
+            </div>
+        </div>
 
         <p>Todos los derechos reservados</p>
 

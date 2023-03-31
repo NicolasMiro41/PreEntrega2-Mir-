@@ -1,23 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html{
     font-family: 'Exo 2', sans-serif;
     font-family: 'PT Serif', serif;
     font-family: 'Roboto Condensed', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body{
     margin: 0;
     background-color: rgb(187, 187, 187);
 }
+/* menustiki */
+.banner{
+    width: 100%;
+    padding: 9rem 3rem;
+    background: url(./Assets/Imagenes/Carousel/Logo\ horizontal1.jpg);
+    background-color: black;
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
 
+.conatiner-stiki{
+    position: sticky;
+    top: 0px;
+}
+.item-options{
+    color: white;
+    margin: 0 1,.5rem;
+    text-decoration: none;
+    font-family: 'PT Serif', serif;
+}
+.item-options:hover{
+    color: orangered;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.main-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* menustiki */
 header{
     background-color: orangered;
     color: rgb(20, 20, 20);
-    padding: 3rem 2rem;
+
 }
 
 header h1{
     font-size: 4rem;
     text-align: center;
+}
+
+/* barra nav */
+a .navlink:hover{
+    color: orangered;
+}
+
+.barra{
+    background-color: rgb(20, 20, 20);
+}
+
+.btnColor{
+    background-color: orangered;
+    color: white;
+    border-color: black;
+}
+
+/* barra nav */
+
+
+/* carousel */
+
+.carousel-item img{
+    width: 100%;
+    height: 600px;
+}
+
+/* carousel */
+
+section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'PT Serif', serif;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(155, 155, 155);
+}
+
+.novedades{
+    text-align: center;
+}
+/* cards */
+.tarjeta-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.tarjeta{
+    width: 400px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 15px;
+}
+.tarjeta-img img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+.tarjeta-body h2{
+    text-align: center;
+}
+.tarjeta-body p{
+    text-align: justify;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.tarjeta-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tarjeta-footer button{
+    width: 150px;
+    background: orangered;
+    color: white;
+    border-radius: 15px;
+    border: 2px solid black;
+    padding: 6px;
+    font-size: 17px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: 0.2s;
+}
+
+.tarjeta-footer button:hover{
+    background-color: black;
+    color: orangered;
+    border: 2px solid orangered;
+}
+
+.tarjeta:hover{
+    box-shadow: 3.9px 7.7px hsl(0deg 0% / 0.38);
+}
+
+/* cards */
+
+.subir{
+    height: 50px;
+    width: 50px;
+    background-color: orangered;
+    color: black;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    text-align: center;
+    font-size: 35px;
+    border-radius: 50%;
+
+}
+
+.redes{
+    color: orangered;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 15px;
 }
 
 footer{
@@ -37,9 +196,11 @@ footer a{
     text-decoration: none;
 }
 footer a:hover{
-    color: orange;
+    color: orangered;
+    text-decoration: none;
 }
 
 nav form{
     float: right;
 }
+
